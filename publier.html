@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>adBook - site d'annones des livres</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-tagsinput.css" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid row">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-menu-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-menu-navbar-collapse-2">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+                <a class=" navbar-brand page-scroll" href="#page-top"><span class="logo">β</span> <span class="name">ad<span class="book">Book</span></span></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-menu-navbar-collapse-1" >
+                <ul class="nav navbar-nav navbar-left ">
+                    <li>
+                        <a class="page-scroll" href="#about"><i class="fa fa-home"></i> Accueil</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services"><i class="fa fa-list"></i> Annonces</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services"><i class="fa fa-envelope"></i> Contact</a>
+                    </li>
+                    <li class="nav-divider">
+                    </li>
+                </ul>
+                 <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about"><i class="fa fa-user"></i> Compte</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about"><i class="fa fa-star"></i> Favoris</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services"><i class="fa fa-sign-out"></i> Se déconnecter</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+            <div class="collapse navbar-collapse" id="bs-menu-navbar-collapse-2">
+                <div class="row">
+                  <div class="search col-md-5 col-sm-5 col-sm-offset-3 col-md-offset-2">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default btn-input-left" type="button"><i class="fa fa-search"></i> Chercher</button>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Recherche des annonces...">
+                    </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-3 advanced-search">
+                    <a href="#" class=""><i class="fa fa-search-plus"></i> Recheche avancée...</a>
+                  </div><!-- /.row -->
+                  <div class="col-lg-2  publish">
+                    <a href="#about" class="btn btn-primary pull-right"><i class="fa fa-bullhorn"></i> Publier une annonce</a>
+                  </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row page ">
+            <aside class="col-md-2 well left-aside sticky" data-col="col-md-2" data-target=".content">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h4 class="section-heading">Les plus recherchés</h4>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <div class="book-genre">
+                    <ul>
+                        <li><a href="#" title="Romans & Fictions"><i class="fa fa-angle-double-right"></i> Romans & Fictions</a></li>
+                        <li><a href="#" title="Bande Dessinée, Comics & Manga"><i class="fa fa-angle-double-right"></i> Bande Dessinée, Comics & Manga</a></li>
+                        <li><a href="#" title="biographie"><i class="fa fa-angle-double-right"></i> biographie</a></li>
+                        <li><a href="#" title="Arts & Culture"><i class="fa fa-angle-double-right"></i> Arts & Culture</a></li>
+                        <li><a href="#" title="Droit"><i class="fa fa-angle-double-right"></i> Droit</a></li>
+                        <li><a href="#" title="Religions & Spiritualité"><i class="fa fa-angle-double-right"></i> Religions & Spiritualité</a></li>
+                        <li><a href="#" title="Géographie"><i class="fa fa-angle-double-right"></i> Géographie</a></li>
+                        <li><a href="#" title="Langues"><i class="fa fa-angle-double-right"></i> Langues</a></li>
+                        <li><a href="#" title="Lettres"><i class="fa fa-angle-double-right"></i> Lettres</a></li>
+                        <li><a href="#" title="Informatique "><i class="fa fa-angle-double-right"></i> Informatique </a></li>
+                        <li><a href="#" title="sport"><i class="fa fa-angle-double-right"></i> sport</a></li>
+                        <li><a href="#" title="histoire"><i class="fa fa-angle-double-right"></i> histoire</a></li>
+                        <li><a href="#" title="philosphie"><i class="fa fa-angle-double-right"></i> philosphie</a></li>
+                        <li><a href="#" title="developpement personnel"><i class="fa fa-angle-double-right"></i> developpement personnel</a></li>
+                        <li><a href="#" title="economie"><i class="fa fa-angle-double-right"></i> economie</a></li>
+                        <li><a href="#" title="Sciences"><i class="fa fa-angle-double-right"></i> Sciences</a></li>
+                    </ul>
+                </div>
+                <hr class="primary">
+                <div class="tagcloud" tagcloud>
+                    <a href="#" title="roman">roman</a>
+                    <a href="#" title="developpement">developpement</a>
+                    <a href="#" title="français">français</a>
+                    <a href="#" title="maths">maths</a>
+                    <a href="#" title="biographie">biographie</a>
+                    <a href="#" title="bac">bac</a>
+                    <a href="#" title="histoire">histoire</a>
+                    <a href="#" title="informatique">informatique</a>
+                    <a href="#" title="anglais">anglais</a>
+                    <a href="#" title="voyage">voyage</a>
+                    <a href="#" title="tutoriel">tutoriel</a>
+                    <a href="#" title="Aventure">Aventure</a>
+                    <a href="#" title="Architecture">Architecture</a>
+                    <a href="#" title="Documents">Documents</a>
+                    <a href="#" title="Contes">Contes</a>
+                    <a href="#" title="Dictionnaires">Dictionnaires</a>
+                    <a href="#" title="Biologie">Biologie</a>
+                    <a href="#" title="policier">policier</a>
+                    <a href="#" title="design">design</a>
+                    <a href="#" title="webdev">webdev</a>
+                    <a href="#" title="wiki">wiki</a>
+                    <a href="#" title="windows">windows</a>
+                    <a href="#" title="wordpress">wordpress</a>
+                    <a href="#" title="Espagnol">Espagnol</a>
+                </div>
+                <hr class="primary">
+                <div class="book-genre">
+                    <ul>
+                        <li><a href="#" title="Les dernières annonces"><i class="fa fa-caret-down"></i> Les dernières annonces</a></li>
+                        <li><a href="#" title="Les annonces de Casablanca "><i class="fa fa-map-marker"></i> Les annonces de Casablanca </a></li>
+                        <li><a href="#" title="Les annonces les plus consultées "><i class="fa fa-eye"></i> Les annonces les plus consultées </a></li>
+                    </ul>
+                </div>
+            </aside>
+            <section class="content div col-md-7">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Créez votre annonce</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <form class="form-horizontal"  action=".">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <legend>Les informations de l'annonce</legend>
+                        <!-- Multiple Radios -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="type">Type d'anoonce : </label>
+                          <div class="col-md-4">
+                          <div class="radio">
+                            <label for="type-0">
+                              <input type="radio" name="type" id="type-0" value="o" class="choice-toggle focus" data-target=".offre" data-inputs=".field" data-except=".all-type" data-tag-bind-name="categorie">
+                              Offre (Vous vendez un livre)
+                            </label>
+                            </div>
+                          <div class="radio">
+                            <label for="type-1">
+                              <input type="radio" name="type" id="type-1" value="d" class="choice-toggle" data-target=".demande"  data-inputs=".field" data-except=".all-type"  data-tag-bind-name="categorie">
+                              Demande (Vous cherchez un livre)
+                            </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Multiple Radios -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="categorie">Catégorie :</label>
+                          <div class="col-md-4">
+                          <div class="radio">
+                            <label for="categorie-0">
+                              <input type="radio" name="categorie" class="choice-toggle focus" data-target=".livre" id="categorie-0" value="l" data-inputs=".field" data-except=".all-cat" data-tag-bind-name="type">
+                              Livre
+                            </label>
+                            </div>
+                          <div class="radio">
+                            <label for="categorie-1">
+                              <input type="radio" name="categorie" class="choice-toggle" data-target=".manuel-s" id="categorie-1" value="m" data-inputs=".field" data-except=".all-cat" data-tag-bind-name="type">
+                              Manuel scolaire
+                            </label>
+                            </div>
+                          <div class="radio">
+                            <label for="categorie-2">
+                              <input type="radio" name="categorie" class="choice-toggle" data-target=".programme-s" id="categorie-2" value="p" data-inputs=".field" data-except=".all-cat" data-tag-bind-name="type">
+                              Programme scolaire
+                            </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group  all-cat all-type field">
+                          <label class="col-md-4 control-label" for="titre">Titre : </label>  
+                          <div class="col-md-6">
+                          <input id="titre"  name="titre" type="text" placeholder="exemple : Voyage au centre de la Terre " class="form-control input-md" required="">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group livre manuel-s all-type field ">
+                          <label class="col-md-4 control-label" for="auteur">Auteur :</label>  
+                          <div class="col-md-6">
+                          <input id="auteur" name="auteur" type="text" placeholder="exemple : Jules Verne" class="form-control input-md" required="">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group all-cat all-type field">
+                          <label class="col-md-4 control-label" for="editeur">Editeur :</label>  
+                          <div class="col-md-6">
+                          <input id="editeur" name="editeur" type="text" placeholder="Editeur du livre ou manuel scolaire" class="form-control input-md">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group livre manuel-s all-type field">
+                          <label class="col-md-4 control-label" for="genre">Genre :</label>
+                          <div class="col-md-6">
+                            <select id="genre" name="genre" class="form-control">
+                              <option value="1">Histoire</option>
+                              <option value="2">Option two</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group  livre manuel-s all-type field">
+                          <label class="col-md-4 control-label" for="langue">Langue :</label>
+                          <div class="col-md-6">
+                            <select id="langue" name="langue" class="form-control">
+                              <option value="1">Arabe</option>
+                              <option value="2">Français</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group all-cat all-type field">
+                          <label class="col-md-4 control-label" for="ville">Ville :</label>
+                          <div class="col-md-6">
+                            <select id="ville" name="ville" class="form-control">
+                              <option value="1">Casablanca</option>
+                              <option value="2">Tanger</option>
+                              <option value="3">fes</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group all-cat all-type field">
+                          <label class="col-md-4 control-label" for="Annee">Année de parrution :</label>
+                          <div class="col-md-6">
+                            <select id="Annee" name="Annee" class="form-control">
+                              <option value="1">2015</option>
+                              <option value="2">2014</option>
+                              <option value="">2013</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Select Basic -->
+                        <div class="form-group  programme-s manuel-s all-type field">
+                          <label class="col-md-4 control-label" for="niveau_scolaire">Niveau scolaire :</label>
+                          <div class="col-md-6">
+                            <select id="niveau_scolaire" name="niveau_scolaire" class="form-control">
+                              <option value="1">1ére année bac sciences experimentales</option>
+                              <option value="2">2éme année bac sciences experimentales</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group programme-s offre field">
+                          <label class="col-md-4 control-label" for="nb_manuels">Nombre des manuels :</label>  
+                          <div class="col-md-6">
+                          <input id="nb_manuels" name="nb_manuels" type="text" placeholder="Nombre des manuels de programme scolaire" class="form-control input-md">
+                            
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group all-cat all-type field">
+                          <label class="col-md-4 control-label" for="mots_cles">Mots clés :</label>  
+                          <div class="col-md-6">
+                          <input id="mots_cles" data-role="tagsinput" name="mots_cles" type="text" placeholder="Exemple : aventures, theatre.. (tapez Entrer ou ',')" class="form-control input-md">
+                          <span class="help-block">Les mots clés : permettent à  l'annnonce d'être plus visible pendant la recherche <strong>(Max : 5)</strong></span>  
+                          </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="form-group all-cat all-type field">
+                          <label class="col-md-4 control-label" for="description">Déscription :</label>
+                          <div class="col-md-6">                     
+                            <textarea class="form-control description" id="description" name="description"></textarea>
+                          </div>
+                        </div>
+
+                        <!-- Appended Input-->
+                        <div class="form-group all-cat all-type field">
+                          <label class="col-md-4 control-label" for="photo">Photo :</label>
+                          <div class="col-md-6">
+                            <div class="photo-zone empty">
+                                <div class="photo-preview transition"><i class="transition fa fa-plus"></i></div>
+                                <button class="btn btn-danger btn-block">Supprimer</button>
+                                <input id="photo" name="photo" type="file" >
+                            </div>
+                            
+                            <span class="help-block">Photo de couverture du livre ou du programme scolaire <strong>(Poids max : 1Mo, Taille max 400x400, Taille min 200x200)</strong></span>  
+                          </div>
+                        </div>
+
+                        <div class="form-group all-cat offre field">
+                          <label class="col-md-4 control-label" for="prix">Prix :</label>
+                          <div class="col-md-6">
+                            <div class="input-group">
+                              <input id="prix" name="prix" class="form-control" placeholder="exemple : 100" type="text">
+                              <span class="input-group-addon">Dh</span>
+                            </div>
+                          </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <!-- Form Name -->
+                        <legend>Vos informations</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group full-name">
+                          <label class="col-md-4 control-label" for="nom_complet">Nom et prenom :</label>  
+                          <div class="col-md-6">
+                          <div class="input-group">
+                              <input id="nom_complet" name="nom_complet" type="text" placeholder="" class="form-control input-md">
+                              <span class="input-group-btn">
+                                    <button class="btn btn-danger btn-input-clear btn-input-right" data-target=".full-name" type="button"><i class="fa fa-remove"></i> Masquer dans l'annonce</button>
+                              </span>
+                          </div>
+                          
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="email">Email :</label>  
+                          <div class="col-md-6">
+                          <input id="email" name="email" type="text" placeholder="votremail@exemple.com" class="form-control input-md" required="">
+                          <span class="help-block">vous serez contacté par cette adresse</span>  
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="telephone">Téléphone :</label>  
+                          <div class="col-md-6">
+                          <input id="telephone" name="telephone" type="text" placeholder="" class="form-control input-md" required="">
+                          <span class="help-block">vous serez contacté par ce numéro de téléphone <strong>(soyez sur qu'il soit correct)</strong></span>  
+                          </div>
+                        </div>
+                    </fieldset>
+                    <!-- Button (Double) -->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="button1id"></label>
+                      <div class="col-md-8">
+                        <button id="button1id" name="button1id" class="btn btn-success"><i class="fa fa-bullhorn"></i> Publier l'annonce</button>
+                        <button id="button2id" name="button2id" class="btn btn-warning"><i class="fa fa-reply"></i> Annuler</button>
+                      </div>
+                    </div>
+                </form>
+            </section>
+            <section class="info-block div col-md-3">
+                <div class="alert message alert-danger">
+                    <a href="#" class="pull-right close transition" data-dismiss="alert"  title=""><i class="fa fa-close"></i></a>
+                    <h4>Les messages d'erreurs</h4>
+                    <strong></strong>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>        
+    </div>
+    <footer class="container-fluid ">
+            <nav class="navbar navbar-inverse row">
+                <div class="container">
+                    <div class="collapse navbar-collapse col-md-12"  >
+                        <ul class="nav navbar-nav ">
+                            <li>
+                                <a class="page-scroll" href="#about"> Accueil</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#services"> Recheche avancée</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#services"> Favoris</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#services"> à propos</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#services"> Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap-tagsinput.js"></script>
+    <script src="js/tagcloud.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+
+</body>
+
+</html>
